@@ -13,12 +13,12 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div className="relative z-50 bg-[#050816]">
-      <div class="absolute -z-50">
-        <div class="bg">
-          <div class="star-field">
-            <div class="layer"></div>
-            <div class="layer"></div>
-            <div class="layer"></div>
+      <div className="absolute -z-50">
+        <div className="bg">
+          <div className="star-field">
+            <div className="layer"></div>
+            <div className="layer"></div>
+            <div className="layer"></div>
           </div>
         </div>
       </div>
