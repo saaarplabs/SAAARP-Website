@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { useEffect, useState } from "react";
 // import { ComputersCanvas } from "./canvas";
 import TextTransition, { presets } from "react-text-transition";
+import ComputersCanvas from "./model";
 // import ComputersCanvas from "./canvas/Computers";
 
 const Hero = () => {
@@ -51,16 +52,16 @@ const Hero = () => {
             and web applications.
           </p>
 
-          <span className="flex">
+          {/* <span className="flex">
             <h1 className="text-[#3182ce] mr-1">I</h1>
             <TextTransition springConfig={presets.wobbly}>
               {textList[count % textList.length]}
             </TextTransition>
-          </span>
+          </span> */}
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      <ComputersCanvas />
     </section>
   );
 };
