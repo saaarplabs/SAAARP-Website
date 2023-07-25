@@ -29,9 +29,9 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [count]);
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto `}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}
+        className={`absolute text-justify inset-0 top-[120px] max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#3182ce]" />
@@ -40,17 +40,21 @@ const Hero = () => {
 
         <div>
           <h1
-            className={`font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white`}
+            className={`font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-transparent bg-gradient-to-b from-sky-400 to-sky-200 bg-clip-text`}
           >
-            Hi, I&apos;m <span className="text-[#3182ce]">Akash</span>
+            SAAARP
           </h1>
           <p
-            className={`text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100`}
+            className={`text-[#dfd9ff] text-justify font-medium lg:text-[18px] sm:text-[16px] text-[16px] lg:leading-[32px] mt-2 text-white-100`}
           >
-            I am a Full Stack Developer, Android{" "}
-            <br className="sm:block hidden" />
-            and web applications.
+            SAAARP LABS team is a group of dedicated professionals who are
+            committed to making a difference in the world of blockchain
+            technology and decentralized systems. With our expertise,
+            experience, and passion for innovation, we are well-positioned to
+            drive the company&apos;s success and push the boundaries of what is
+            possible in this exciting field.
           </p>
+         
 
           {/* <span className="flex">
             <h1 className="text-[#3182ce] mr-1">I</h1>

@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 // import { logo, menu, close } from "../assets";
 import Link from "next/link";
+import AnimatedLogo from "./logo";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -31,7 +32,7 @@ const Navbar = () => {
         scrolled ? "bg-[#050816]" : "bg-transparent"
       }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className='w-full  flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           href='/'
           className='flex items-center gap-2'
@@ -40,10 +41,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={'logo.png'} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Akash &nbsp;
-            <span className='sm:block hidden'> | Gandhar</span>
+          
+          <AnimatedLogo/>
+          <img src={'logo.png'} alt='logo' className='w-3xl hidden xl:block object-contain' />
+          <p className='text-white  text-6xl hidden xl:block font-bold cursor-pointer flex '>
+            LABS
           </p>
         </Link>
 

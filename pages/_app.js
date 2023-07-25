@@ -1,5 +1,8 @@
-import '@/styles/globals.css'
+import useNeonCursor from "@/hooks/useNeonCursor";
+import "@/styles/globals.css";
+
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  useNeonCursor();
+  return <Component {...pageProps} />;
 }
