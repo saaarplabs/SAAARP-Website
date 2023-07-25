@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   return (
-    <div  className="relative z-50 bg-[#050816]">
+    <div className="relative z-50 bg-[#050816]">
       <div className="absolute -z-50">
         <div className="bg">
           <div className="star-field">
@@ -38,6 +38,7 @@ export default function Home() {
           <Contact />
           {/* <StarsCanvas /> */}
         {/* </div> */}
+        
     </div>
   )
 }
