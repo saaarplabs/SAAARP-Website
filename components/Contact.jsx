@@ -70,77 +70,60 @@ const Contact = () => {
 
   return (
     <section className={`relative w-full h-auto mx-auto mb-32`}>
-
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-[#100d25] p-8 rounded-2xl"
+      <div
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
-        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
-          Get in touch
-        </p>
-        <h3 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          Contact.
-        </h3>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] bg-[#100d25] p-8 rounded-2xl"
         >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className="bg-transparent border-2 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className="bg-transparent border-2 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none  font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What you want to say?"
-              className="bg-transparent border-2 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none  font-medium"
-            />
-          </label>
+          <h3 className="text-white font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] uppercase">
+            Tokenomics
+          </h3>
 
-          <button
-            type="submit"
-            className="bg-transparent border-2 transition duration-500 text-opacity-100 opacity-50 hover:opacity-100 hover:bg-gradient-to-r from-purple-600 to-pink-600  py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mt-2 flex flex-col gap-8"
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
-      </motion.div>
+              <span className="text-white font-medium mb-4">
+                Tokenomics refers to the economic model of a cryptocurrency or
+                token and its distribution. The specifics of tokenomics can vary
+                depending on the project, but here are some common components
+                and allocation percentages: Token supply: The total number of
+                tokens that will be created. This can vary depending on the
+                project, but is usually predetermined and fixed. Initial
+                distribution: The allocation of tokens when the project
+                launches. This can be done through an initial coin offering
+                (ICO), airdrops, or other methods. 
+              </span>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-        
-      </motion.div>
-    </div>
+              <h3 className="text-white font-black md:text-[30px] sm:text-[20px] xs:text-[10px] text-[20px] uppercase">
+              Token allocation:
+                
+              </h3>
+              <span className="text-white font-medium mb-4">
+                Tokenomics refers to the economic model of a cryptocurrency or
+                token and its distribution. The specifics of tokenomics can vary
+                depending on the project, but here are some common components
+                and allocation percentages: Token supply: The total number of
+                tokens that will be created. This can vary depending on the
+                project, but is usually predetermined and fixed. Initial
+                distribution: The allocation of tokens when the project
+                launches. This can be done through an initial coin offering
+                (ICO), airdrops, or other methods. 
+              </span>
+            
+          </form>
+        </motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      </div>
     </section>
   );
 };

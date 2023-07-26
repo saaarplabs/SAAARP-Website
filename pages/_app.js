@@ -20,6 +20,7 @@ export default function App({ Component, pageProps }) {
             outerSize={35}
             innerScale={1}
             outerScale={2}
+            color="0, 147, 217"
             // outerAlpha={0}
             hasBlendMode={true}
             clickables={[

@@ -2,11 +2,11 @@ export const textVariant = (delay) => {
   return {
     hidden: {
       y: -50,
-      opacity: 0,
+      opacity: 100,
     },
     show: {
       y: 0,
-      opacity: 1,
+      opacity: 100,
       transition: {
         type: "spring",
         duration: 1.25,

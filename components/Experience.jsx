@@ -185,7 +185,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <section className={`relative w-full h-auto mx-auto mb-32 text-justify`}>
+      <section className={`relative w-full text-white h-auto mx-auto mb-32 text-justify`}>
         <motion.div variants={textVariant()}>
           <p
             className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider `}
@@ -198,6 +198,7 @@ const Experience = () => {
             Products
           </h2>
         </motion.div>
+        
 
         <div className="mt-20 flex flex-col">
           <VerticalTimeline>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Witcher Medallion
+* source:	https://sketchfab.com/3d-models/witcher-medallion-745f5cf41df1421ab7ec12c417f288cf
+* author:	Angry_Filin (https://sketchfab.com/angry_filin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Witcher Medallion" (https://sketchfab.com/3d-models/witcher-medallion-745f5cf41df1421ab7ec12c417f288cf) by Angry_Filin (https://sketchfab.com/angry_filin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
