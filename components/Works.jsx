@@ -99,9 +99,9 @@ const ProjectCard = ({
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-[#100d25] p-20 h-28 rounded-2xl sm:w-[360px] flex justify-center items-center w-full"
+              className="bg-[#100d25] p-20 h-28 rounded-2xl w-[340px] flex justify-center items-center "
             >
-              <div>
+              <div className="flex w-full justify-center items-center text-center">
                 <h3 className="text-white font-bold text-[24px]">{name}</h3>
               </div>
             </Tilt>
@@ -170,7 +170,7 @@ const Works = () => {
   };
   return (
     <>
-      <section className={`relative w-full h-auto mx-auto mb-32`}>
+      <section  className={`relative w-full mt-10 h-auto mx-auto mb-32`}>
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} `}>Meet Our team</p>
           <h2 className={`${styles.sectionHeadText}`}>TEAM</h2>
@@ -179,7 +179,7 @@ const Works = () => {
         <div className="w-full flex">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+            className="mt-3 text-secondary text-[17px] text-justify leading-[30px]"
           >
             Following projects showcases my skills and experience through
             real-world examples of my work. Each project is briefly described
@@ -189,7 +189,7 @@ const Works = () => {
           </motion.p>
         </div>
 
-        <div className="mt-20 flex flex-wrap gap-7">
+        <div className="mt-20 flex  justify-center flex-wrap gap-7">
           {projects.map((project, index) => (
             <ProjectCard
               isFlipped={isFlipped}

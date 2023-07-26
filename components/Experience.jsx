@@ -188,7 +188,7 @@ const Experience = () => {
       <section className={`relative w-full text-white h-auto mx-auto mb-32 text-justify`}>
         <motion.div variants={textVariant()}>
           <p
-            className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider `}
+            className={`sm:text-[18px] mt-20 text-[14px] text-secondary uppercase tracking-wider `}
           >
             What we have done so far
           </p>
@@ -200,7 +200,7 @@ const Experience = () => {
         </motion.div>
         
 
-        <div className="mt-20 flex flex-col">
+        <div className="flex flex-col">
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <ExperienceCard
