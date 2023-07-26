@@ -6,8 +6,7 @@ import CanvasLoader from "./Loader";
 // import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("/3d_model/scene.gltf");
-
+  const computer = useGLTF("/ethereum/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -22,9 +21,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 50}
-        position={isMobile ? [0, -3, -2.2] : [0, -2, 0]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={1.25}
+        position={[-1, -2, 0]}
+        rotation={[0, 1.1, 0]}
       />
     </mesh>
   );

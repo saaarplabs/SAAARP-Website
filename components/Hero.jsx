@@ -64,7 +64,7 @@ const Hero = () => {
           </span> */}
         </div>
       </div>
-
+      
       <ComputersCanvas />
     </section>
   );
