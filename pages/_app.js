@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
+import '@/public/style.css';
+import '@/public/background.js';
+
 export default function App({ Component, pageProps }) {
   const [isBrowser, setIsBrowser] = useState(false);
   const router = useRouter();
