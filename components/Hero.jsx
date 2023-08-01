@@ -39,13 +39,13 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1
+          {/* <h1
             className={`font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-transparent bg-gradient-to-b from-sky-400 to-sky-200 bg-clip-text`}
           >
             SAAARP
-          </h1>
+          </h1> */}
           <p
-            className={`text-[#dfd9ff] text-justify font-medium lg:text-[18px] sm:text-[16px] text-[16px] lg:leading-[32px] mt-2 text-white-100`}
+            className={`text-[#dfd9ff] text-justify font-medium lg:text-[18px] sm:text-[16px] text-[16px] lg:leading-[32px] mt-10 text-white-100`}
           >
             SAAARP LABS team is a group of dedicated professionals who are
             committed to making a difference in the world of blockchain

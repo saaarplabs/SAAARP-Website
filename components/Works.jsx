@@ -11,87 +11,120 @@ import { useState } from "react";
 
 const projects = [
   {
-    name: "Deewan Cars | Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "/deewancars.png",
-    source_code_link: "https://github.com/akashgandhar/DeewanCars",
+    "name": "Prof. (Dr.) C.P. Katti (Retd.)",
+    "experience": "40+ years of research in Numerical Analysis and Scientific Computing",
+    "qualifications": ["Ph.D - IIT Delhi (Mathematics)", "MS - Computer Science (University of Missouri, Columbia) Research & Development"]
   },
   {
-    name: "School-ERP",
-    description:
-      "Web application that enables schools to manage all Fields, Manage Students,Teachers,Finances etc. in One Single Platform With reliability and Secure Platform ",
-    tags: [
-      {
-        name: "next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "/mjps.png",
-    source_code_link: "https://github.com/akashgandhar/schooL-LMS",
+    "name": "Satyendra",
+    "experience": "18+ years in Enterprise Architect, Business Analytics and Optimization",
+    "qualifications": ["Fellow - IIM, Ahmedabad", "Post Doctoral Fellow, University of New Brunswick, Canada Advisory & Research"]
   },
   {
-    name: "Saaarp Website",
-    description:
-      "A Metaverse company that create WEB3 Applications for the users and any kind of DAPPS the user wants with efficient design and self chain.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "blockchain",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "/saaarpweb.png",
-    source_code_link: "https://github.com/akashgandhar/saaarp-website",
+    "name": "Prof. (Dr.) D. K. Lobiyal",
+    "experience": "30+ years in Mobile ad-hoc Network and Natural Language Processing",
+    "qualifications": ["Ph.D - Computer Science JNU New Delhi Advisory & Research"]
   },
+  {
+    "name": "Asst. Prof. (Dr.) Karan Singh",
+    "experience": "14+ years in Cyber Security, IoT and Network Security",
+    "qualifications": ["Ph.D - Computer Science (MNNIT, Allahabad) Advisory & Research"]
+  },
+  {
+    "name": "Dr. Anand",
+    "experience": "20+ years in Mathematical Modelling, Cryptography",
+    "qualifications": ["Gold Medalist (Mathematics) Ph.D - Computer Science JNU New Delhi Research & Development"]
+  },
+  {
+    "name": "A. P. Sinha",
+    "experience": "30+ years in Marketing, Strategic Market Development",
+    "qualifications": ["PGP-IIM, Ahmedabad Marketing & Sales", "Ex-Bayer"]
+  },
+  {
+    "name": "Asst. Prof. (Dr.) Abhay",
+    "experience": "5+ years in Artificial Intelligence",
+    "qualifications": ["Ph.D - Dynamical Science IISER, Thiruvananthapuram Research & Development"]
+  },
+  {
+    "name": "Narayanji",
+    "experience": "Specialization in Cryptography",
+    "qualifications": ["Ph.D Scholar - IIT Delhi", "M.Tech - IIT Kharagpur Research & Development"]
+  },
+  {
+    "name": "Naren",
+    "experience": "18+ years in Design and Development of IT Infra Solutions",
+    "qualifications": ["M.Sc (Computer Science) Enterprise Architect", "Ex-CDAC"]
+  },
+  {
+    "name": "Pradeep",
+    "experience": "21+ years in Design and Development of IT Infra Solutions",
+    "qualifications": ["MCA Enterprise Architect", "Ex-EDS"]
+  },
+  {
+    "name": "Ashok",
+    "experience": "21+ years of Product Design",
+    "qualifications": ["Product Development Ex-BlackBerrys"]
+  },
+  {
+    "name": "Ranjit",
+    "experience": "25+ years in Product Development, Influencer Marketing",
+    "qualifications": ["Social Media Communications"]
+  },
+  {
+    "name": "Dr. Nandan",
+    "experience": "22+ years in Research & Journalism",
+    "qualifications": ["Ph.D JNU New Delhi", "Ex-NewsX"]
+  },
+  {
+    "name": "Shailendra",
+    "experience": "10+ years in Missile Systems 20+ years in Business Management",
+    "qualifications": ["Ph.D dropout JNU New Delhi", "Business & Projects", "Ex-Indian Air Force"]
+  },
+  {
+    "name": "Alok",
+    "experience": "25+ years in Design and Development of IT Infra Solutions",
+    "qualifications": ["MBA - Information Technology Enterprise Architect", "Ex-EDS"]
+  },
+  {
+    "name": "Shreyansh",
+    "experience": "20+ years in Accounting, Financial and Legal Advisory",
+    "qualifications": ["Chartered Accountant"]
+  },
+  {
+    "name": "Satish",
+    "experience": "30+ years in Software Testing. Training & Development",
+    "qualifications": ["Software Testing Ex-India Testing Board"]
+  },
+  {
+    "name": "Saurya",
+    "experience": "Blockchain & Backend Developer",
+    "qualifications": ["B. Tech - Computer Science"]
+  }
 ];
 
 const ProjectCard = ({
   index,
   name,
-  description,
-  tags,
-  image,
-  source_code_link,
+  experience,
+  qualifications,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     setIsFlipped(!isFlipped);
   };
+  const handleHover = (e) => {
+    e.preventDefault();
+    setIsFlipped(true);
+  };
+  const handleHoverOut = (e) => {
+    e.preventDefault();
+    setIsFlipped(false);
+  };
   return (
-    <>
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <div onClick={handleClick}>
+    <div  onMouseEnter={handleHover} onMouseLeave={handleHoverOut}>
+      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <div> 
           <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
             <Tilt
               options={{
@@ -120,7 +153,7 @@ const ProjectCard = ({
             >
               <div className="relative w-full h-[230px]">
                 <img
-                  src={image}
+                  src="/avatar.avif"
                   alt="project_image"
                   className="w-full h-full object-cover rounded-2xl"
                 />
@@ -141,24 +174,15 @@ const ProjectCard = ({
 
               <div className="mt-5">
                 <h3 className="text-white font-bold text-[24px]">{name}</h3>
-                <p className="mt-2 text-secondary text-[14px]">{description}</p>
+                <p className="mt-2 text-secondary text-[14px]">{experience}{ qualifications}</p>
               </div>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                  <p
-                    key={`${name}-${tag.name}`}
-                    className={`text-[14px] ${tag.color}`}
-                  >
-                    #{tag.name}
-                  </p>
-                ))}
-              </div>
+              {/*   */}
             </Tilt>
           </motion.div>
         </div>
       </ReactCardFlip>
-    </>
+    </div>
   );
 };
 

@@ -9,19 +9,19 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Decentralised",
     icon: "/web.png",
   },
   {
-    title: "React Native Developer",
+    title: "Technology Services",
     icon: "./mobile.png",
   },
   {
-    title: "Backend Developer",
+    title: "NFTs",
     icon: "./backend.png",
   },
   {
-    title: "Content Creator",
+    title: "LiveLoud Handle",
     icon: "./creator.png",
   },
 ];
