@@ -23,7 +23,7 @@ export default function Home() {
             <div className="layer"></div>
           </div>
         </div>
-        <div id="large-header" className="large-header">
+        <div id="large-header" className="large-header hidden xl:block">
           <canvas id="demo-canvas"></canvas>
         </div>
       </div>
