@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
-import '@/public/style.css';
-import '@/public/background.js';
+import "@/public/style.css";
+import "@/public/background.js";
 
 export default function App({ Component, pageProps }) {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -16,6 +16,10 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
+      <Head>
+        <title>SAAARP</title>
+        <link rel="icon" href="/saaarp.jpg" />
+      </Head>
       {isBrowser && (
         <div className="App">
           <AnimatedCursor

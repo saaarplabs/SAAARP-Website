@@ -15,9 +15,9 @@ const Footer = () => {
       <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
         <div class="flex flex-col">
           <div class="flex mt-24 mb-12 flex-row items-center justify-center xl:justify-between">
-            <div class="">
+            <Link href="#home" classname = "hover:cursor-pointer">
               <img src="logo.png" alt="logo" class="w-40 object-contain hidden xl:block" />
-            </div>
+            </Link>
             <Link
               href="#about"
               class="hidden xl:block cursor-pointer text-gray-600 hover:text-white uppercase"

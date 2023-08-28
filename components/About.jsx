@@ -9,11 +9,11 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const services = [
   {
-    title: "Decentralised",
+    title: "dApps",
     icon: "/web.png",
   },
   {
-    title: "Technology Services",
+    title: "DeFi",
     icon: "./mobile.png",
   },
   {
