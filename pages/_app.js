@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
+import Head from "next/head";
 
 import "@/public/style.css";
 import "@/public/background.js";
