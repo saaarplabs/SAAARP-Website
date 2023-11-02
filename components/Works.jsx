@@ -12,115 +12,119 @@ import { useState } from "react";
 const projects = [
   {
     "name": "Prof. (Dr.) C.P. Katti (Retd.)",
-    "experience": "40+ years of research in Numerical Analysis and Scientific Computing",
-    "qualifications":["Ph.D-IIT Delhi(Mathematics)", "MS-Computer Science(University of Missouri, Columbia) Research & Development"],
+    "experience": ["40+ years of research in Numerical Analysis and Scientific Computing"],
+    "qualifications": ["Ph.D-IIT Delhi (Mathematics), MS-Computer Science (University of Missouri, Columbia), Research & Development"],
     "image": "/avatar/1.jpg"
   },
   {
     "name": "Satyendra",
-    "experience": "18+ years in Enterprise Architect,Business Analytics and Optimization",
-    "qualifications":["Fellow-IIM, Ahmedabad", "Post Doctoral Fellow, University of New Brunswick, Canada Advisory & Research"],
+    "experience": ["18+ years in Enterprise Architect, Business Analytics and Optimization"],
+    "qualifications": ["Fellow-IIM, Ahmedabad, Post Doctoral Fellow, University of New Brunswick, Canada Advisory & Research"],
     "image": "/avatar/2.jpg"
   },
   {
     "name": "Prof. (Dr.) D. K. Lobiyal",
-    "experience": "30+ years in Mobile ad-hoc Network and Natural Language Processing",
-    "qualifications":["Ph.D-Computer Science JNU New Delhi Advisory & Research"],
+    "experience": ["30+ years in Mobile ad-hoc Network and Natural Language Processing"],
+    "qualifications": ["Ph.D-Computer Science, JNU New Delhi Advisory & Research"],
     "image": "/avatar/3.jpg"
   },
   {
     "name": "Asst. Prof. (Dr.) Karan Singh",
-    "experience": "14+ years in Cyber Security, IoT and Network Security",
-    "qualifications":["Ph.D-Computer Science(MNNIT, Allahabad) Advisory & Research"],
+    "experience": ["14+ years in Cyber Security, IoT and Network Security"],
+    "qualifications": ["Ph.D-Computer Science (MNNIT, Allahabad), Advisory & Research"],
     "image": "/avatar/4.jpg"
   },
   {
     "name": "Dr. Anand",
-    "experience": "20+ years in Mathematical Modelling, Cryptography",
-    "qualifications": ["Gold Medalist(Mathematics) Ph.D-Computer Science JNU New Delhi Research & Development"],
+    "experience": ["20+ years in Mathematical Modelling, Cryptography"],
+    "qualifications": ["Gold Medalist (Mathematics), Ph.D-Computer Science, JNU Research & Development"],
     "image": "/avatar/5.jpg"
   },
   {
     "name": "A. P. Sinha",
-    "experience": "30+ years in Marketing, Strategic Market Development",
-    "qualifications": ["PGP-IIM, Ahmedabad Marketing & Sales", "Ex-Bayer"],
+    "experience": ["30+ years in Marketing, Strategic Market Development"],
+    "qualifications": ["PGP-IIM, Ahmedabad Marketing & Sales, Ex-Bayer"],
     "image": "/avatar/6.jpg"
   },
   {
     "name": "Asst. Prof. (Dr.) Abhay",
-    "experience": "5+ years in Artificial Intelligence",
-    "qualifications": ["Ph.D-Dynamical Science IISER,Thiruvananthapuram Research & Development"],
+    "experience": ["5+ years in Artificial Intelligence"],
+    "qualifications": ["Ph.D (Dynamical Science IISER), Thiruvananthapuram Research & Development"],
     "image": "/avatar/7.jpg"
   },
   {
     "name": "Narayanji",
-    "experience": "Specialization in Cryptography",
-    "qualifications": ["Ph.D Scholar-IIT Delhi", "M.Tech-IIT Kharagpur Research & Development"],
+    "experience": ["Specialization in Cryptography"],
+    "qualifications": ["Ph.D Scholar-IIT Delhi, M.Tech-IIT Kharagpur Research & Development"],
     "image": "/avatar/8.jpg"
   },
   {
     "name": "Naren",
-    "experience": "18+ years in Design and Development of IT Infra Solutions",
-    "qualifications": ["M.Sc(Computer Science) Enterprise Architect", "Ex-CDAC"],
+    "experience": ["18+ years in Design and Development of IT Infra Solutions"],
+    "qualifications": ["M.Sc (Computer Science), Enterprise Architect, Ex-CDAC"],
     "image": "/avatar/9.jpg"
   },
   {
     "name": "Pradeep",
-    "experience": "21+ years in Design and Development of IT Infra Solutions",
-    "qualifications": ["MCA Enterprise Architect", "Ex-EDS"],
+    "experience": ["21+ years in Design and Development of IT Infra Solutions"],
+    "qualifications": ["MCA Enterprise Architect, Ex-EDS"],
     "image": "/avatar/10.jpg"
   },
   {
     "name": "Ashok",
-    "experience": "21+ years of Product Design",
-    "qualifications": ["Product Development Ex-BlackBerrys"],
+    "experience": ["21+ years of Product Design"],
+    "qualifications": ["Product Development, Ex-BlackBerrys"],
     "image": "/avatar/11.jpg"
   },
   {
     "name": "Ranjit",
-    "experience": "25+ years in Product Development, Influencer Marketing",
+    "experience": ["25+ years in Product Development, Influencer Marketing"],
     "qualifications": ["Social Media Communications"],
     "image": "/avatar/12.jpg"
   },
   {
     "name": "Dr. Nandan",
-    "experience": "22+ years in Research & Journalism",
-    "qualifications": ["Ph.D JNU New Delhi", "Ex-NewsX"],
+    "experience": ["22+ years in Research & Journalism"],
+    "qualifications": ["Ph.D JNU New Delhi, Ex-NewsX"],
     "image": "/avatar/13.jpg"
   },
   {
     "name": "Shailendra",
-    "experience": "10+ years in Missile Systems 20+ years in Business Management",
-    "qualifications": ["Ph.D dropout JNU New Delhi", "Business & Projects", "Ex-Indian Air Force"],
+    "experience": ["10+ years in Missile Systems, 20+ years in Business Management"],
+    "qualifications": ["Ph.D dropout JNU New Delhi, Business & Projects, Ex-Indian Air Force"],
     "image": "/avatar/14.jpg"
   },
   {
     "name": "Alok",
-    "experience": "25+ years in Design and Development of IT Infra Solutions",
-    "qualifications": ["MBA-Information Technology Enterprise Architect", "Ex-EDS"],
+    "experience": ["25+ years in Design and Development of IT Infra Solutions"],
+    "qualifications": ["MBA-Information Technology, Enterprise Architect, Ex-EDS"],
     "image": "/avatar/15.jpg"
   },
   {
     "name": "Shreyansh",
-    "experience": "20+ years in Accounting, Financial and Legal Advisory",
+    "experience": ["20+ years in Accounting, Financial and Legal Advisory"],
     "qualifications": ["Chartered Accountant"],
     "image": "/avatar/16.jpg"
   },
   {
     "name": "Satish",
-    "experience": "30+ years in Software Testing. Training & Development",
-    "qualifications": ["Software Testing Ex-India Testing Board"],
+    "experience": ["30+ years in Software Testing. Training & Development"],
+    "qualifications": ["Software Testing, Ex-India Testing Board"],
     "image": "/avatar/17.jpg"
   },
   {
     "name": "Saurya",
-    "experience": "Blockchain & Backend Developer",
+    "experience": ["Blockchain & Backend Developer"],
     "qualifications": ["B.Tech-Information Technology"],
     "image": "/avatar/18.jpg"
   },
   // Add images for the remaining objects in a similar format
 ];
 
+// const maxLength = Math.max(...projects.map(str => str.length));
+// const formattedStrings = projects.map(str => str.padEnd(maxLength, ' '));
+
+// console.log(formattedStrings);
 
 const ProjectCard = ({
   index,
@@ -193,7 +197,7 @@ const ProjectCard = ({
                 </div>
               </div>
 
-              <div className="mt-5 text-justify">
+              <div className="mt-5 text-left">
                 <h3 className="text-white font-bold text-[24px]">{name}</h3>
                 <p className="mt-2 text-secondary text-[14px]">{experience}.<br />{ qualifications}</p>
               </div>
