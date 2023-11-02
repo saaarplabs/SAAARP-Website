@@ -21,7 +21,7 @@ const services = [
     icon: "./backend.png",
   },
   {
-    title: "LiveLoud Handle",
+    title: "Web3.0",
     icon: "./creator.png",
   },
 ];
